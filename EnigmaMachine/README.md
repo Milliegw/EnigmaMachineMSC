@@ -1,4 +1,4 @@
-**Enigma Machine Project**
+# **Enigma Machine Project**
 
 This project simulates the workings of the Enigma Machine, a cipher device used by the Germans during World War II for secure communication. The Enigma Machine encrypts messages through a series of rotors and plugboards, making the encoding process complex and secure.
 
@@ -10,7 +10,7 @@ Table of Contents
 - Encoding Process
 - Usage
 
-**How the Enigma Machine Works**
+## **How the Enigma Machine Works**
 
 The Enigma Machine uses a combination of rotors, a plugboard, and a reflector to encrypt messages.
 
@@ -22,7 +22,7 @@ Key Components:
 3. Reflector: After passing through the rotors, the signal is reflected back through the rotors, effectively doubling the encryption.
 4. Rotor Notches: These are specific positions on the rotors that trigger the movement of adjacent rotors, simulating a stepping mechanism.
 
-**Project Structure**
+## **Project Structure**
 
 The project is organized into several modules:
 - main.py: The entry point of the application that manages the user interface and the overall encoding process.
@@ -33,9 +33,9 @@ The project is organized into several modules:
 - test.py: Contains unit tests for various functionalities.
 - welcome.py: Displays a welcome message and user instructions.
 
-**Classes and Functions**
+## **Classes and Functions**
 
-SUMMARY
+### SUMMARY
 
 main.py
 - typing_welcome_message(): Displays a welcome message.
@@ -57,7 +57,7 @@ enigmaPlugs.py
 enigmaRotors.py
 - Defines rotor settings, including configurations and notch positions.
 
-**Main Module**
+### **Main Module**
 
 File: enigma.py
 
@@ -83,7 +83,7 @@ Returns: The selected reflector and its wiring configuration.
 - choose_mode_and_encode()
 Purpose: Orchestrates the entire process of selecting plugboard, rotors, and reflector, then encoding the user’s input message. Depending on the mode chosen, it handles phrase input or single-letter input.
 
-***PLUGBOARD AND PLUGLEAD MODULE***
+### **PLUGBOARD AND PLUGLEAD MODULE**
 
 1.	PlugLead
 
@@ -113,7 +113,7 @@ Functions:
 Usage Example
 To use the plugboard functionality, instantiate the Plugboard class, add PlugLead objects, and utilize the transform_character method to encode characters based on user-defined connections.
 
-***ROTOR MODULE***
+### **ROTOR MODULE**
 
 enigmaRotors.py
 
@@ -142,7 +142,7 @@ Functions:
 Usage Example
 To set up the rotors and reflectors, call rotors_setup() and reflectors_setup(). The selected configurations will be used in the encoding process of the Enigma Machine.
 
-**CHOOSE MODE Module**
+### **CHOOSE MODE Module**
 
 File: chooseMode.py
 
@@ -153,7 +153,7 @@ Key Functions:
 Purpose: Manages user input modes and controls the encoding process. Depending on the mode selected, the function handles the step-by-step encoding of letters or the encoding of a full phrase at once.
 Usage: Called during the setup process, it ensures that the encoding process fits the user’s chosen mode.
 
-**ENCODING PROCESS Module**
+### **ENCODING PROCESS Module**
 
 File: encodingMessage.py
 
@@ -167,7 +167,7 @@ Returns: The encoded letter, along with detailed information about the intermedi
 - advance_rotors(...)
 Purpose: Advances the rotors after each letter is encoded, simulating the stepping mechanism of the real Enigma Machine. If a rotor reaches its notch position, the adjacent rotor also advances.
 
-**WELCOME Module**
+### **WELCOME Module**
 
 File: welcome.py
 
@@ -177,7 +177,7 @@ Key Functions:
 - typing_welcome_message()
 - Purpose: Displays a welcome message with a typing effect to engage the user as they start interacting with the program. The message can include a brief explanation of what the Enigma Machine is and how the program works.
 
-**TEST Module**
+### **TEST Module**
 
 File: test.py
 
@@ -188,7 +188,7 @@ Key Components:
 - Tests for Rotors and Rotor Advancement: Validate that rotors are configured correctly and that rotor advancement occurs as intended.
 - Encoding Process Tests: Test the end-to-end encoding of messages to ensure that the components integrate correctly and provide the expected output.
 
-**ENCODING Process**
+## **ENCODING Process**
 
 The encoding process occurs in several steps:
 1. User Setup: The user is prompted to select the plugboard settings, rotors, and reflector.
@@ -203,7 +203,7 @@ The encoding process occurs in several steps:
 4. Rotor Advancement: After each letter is encoded, the rightmost rotor steps forward. If it reaches a notch, it causes the next rotor to advance, continuing the process.
 5. Output: The encoded message is displayed to the user.
 
-**USAGE**
+## **USAGE**
 
 To run the project, execute main.py:
 python main.py
