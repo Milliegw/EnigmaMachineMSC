@@ -1,7 +1,7 @@
-from ui.welcome import (typing_welcome_message, ask_for_instructions)
-from core.enigmaPlugs import *
-from core.enigmaRotors import rotor_notches_dict, rotors_setup, reflectors_setup
-from ui.chooseMode import choose_mode_and_encode
+from EnigmaMachine.ui.welcome import typing_welcome_message, ask_for_instructions
+from EnigmaMachine.core.enigmaPlugs import get_user_leads
+from EnigmaMachine.core.enigmaRotors import rotor_notches_dict, rotors_setup, reflectors_setup
+from EnigmaMachine.ui.chooseMode import choose_mode_and_encode
 
 #Call the welcome message functions
 if __name__ == "__main__":
